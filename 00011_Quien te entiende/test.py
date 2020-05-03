@@ -1,13 +1,12 @@
-describe 'Interfaz de' do
-  it 'Mercedes' do
+describe 'Interfaz de':
+  it 'Mercedes':
     expect(interfaz_mercedes).to match_array ['cantar!']
-  end
 
-  it 'Pepita' do
+
+  it 'Pepita':
     expect(interfaz_pepita).to match_array ['energia', 'cantar!', 'comer_lombriz!', 'volar_en_circulos!']
-  end
 
-  it 'Norita' do
+
+  it 'Norita':
     expect(interfaz_norita).to match_array ['cantar!', 'comer_lombriz!', 'volar_en_circulos!']
-  end  
-end
+

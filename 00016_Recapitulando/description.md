@@ -7,15 +7,15 @@ En un mundo de objetos, todo lo que tenemos son **objetos** y **mensajes**. A es
 
 ム **Operadores**. Son todos aquellos cuyo "nombre" se compone de uno o más símbolos, y se envían simplemente escribiendo dichos símbolos. En cuanto a los argumentos,
 
-* pueden no tomar ninguno, como la negación `!true`;
+* pueden no tomar ninguno, como la negación `!True`;
 * o pueden tomar uno (y solo uno), como `Orson == Garfield` o `energia + 80`.
 
 Como vimos, también se pueden escribir como mensajes de palabra clave (aunque no parece buena idea escribir `1.==(2)` en vez de `1 == 2` :stuck_out_tongue:).
 
 > Vamos a enviar algunos mensajes para terminar de cerrar la idea. Te toca escribir un programa que haga que Pepita:
->  
+>
 > 1. Coma 90 gramos de alpiste. :rice:
 > 1. Vuele a Iruya. :earth_americas:
 > 1. Finalmente, coma tanto alpiste como el 10% de la energía que le haya quedado.  :rice:
-> 
+>
 > Este programa tiene que andar sin importar con cuanta energía arranque `Pepita`.
