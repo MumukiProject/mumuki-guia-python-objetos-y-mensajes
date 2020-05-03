@@ -12,7 +12,7 @@ Y de hecho, ¡también podemos escribirlo como un envío de mensajes convenciona
 
 > Probá en la consola los siguientes envíos de mensajes:
 >
-```ruby
+```python
 ム 5.+(6)
 ム 3.<(27)
 ム Pepita.==(Norita)
