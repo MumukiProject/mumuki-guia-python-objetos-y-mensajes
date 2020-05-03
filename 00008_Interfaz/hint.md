@@ -1,0 +1,1 @@
+`nil` es la forma que tenemos en Ruby de representar a "la nada" (que, casualmente, ¡también es un objeto!).

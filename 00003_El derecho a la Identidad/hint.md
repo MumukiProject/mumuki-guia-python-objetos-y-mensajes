@@ -1,0 +1,1 @@
+¿Te cansaste de escribir? Te dejamos un truquito para usar la consola más rápido: si apretás la flecha para arriba :arrow_up:, se repite lo último que escribiste. :wink:

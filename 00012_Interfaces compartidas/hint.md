@@ -1,0 +1,1 @@
+Recordá que la interfaz es el conjunto de mensajes que un objeto entiende. Por lo tanto, si queremos ver cual interfaz comparten dos objetos, tenemos que pensar en la intersección entre los conjuntos de mensajes de cada uno (es decir, aquellos que son iguales).
