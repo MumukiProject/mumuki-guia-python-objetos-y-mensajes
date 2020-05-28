@@ -1,5 +1,5 @@
 class BuenosAiresClass:
-  def self.kilometr(self):
+  def self.kilometros(self):
     return 0
 
 BuenosAires = BuenosAiresClass()
