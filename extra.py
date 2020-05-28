@@ -1,5 +1,5 @@
 class BuenosAiresClass:
-  def self.kilometros(self):
+  def kilometros(self):
     return 0
 
 BuenosAires = BuenosAiresClass()
@@ -7,7 +7,6 @@ BuenosAires = BuenosAiresClass()
 # module Iruya
 #   def self.kilometr(self):
 #     1710
-
 
 
 # module Obera
