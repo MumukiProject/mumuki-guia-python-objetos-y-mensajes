@@ -2,7 +2,6 @@ class BuenosAiresClass:
   def self.kilometr(self):
     return 0
 
-
 BuenosAires = BuenosAiresClass()
 
 # module Iruya
