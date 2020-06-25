@@ -6,4 +6,4 @@
     
   def test_estar_en_Obera(self):
     """estar en Oberá"""
-    self.assertTrue(isInstance(Pepita.ciudad,Obera))
+    self.assertTrue(isinstance(Pepita.ciudad,Obera))
