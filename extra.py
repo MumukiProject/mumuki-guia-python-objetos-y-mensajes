@@ -4,13 +4,6 @@ class BuenosAiresClass:
 
 BuenosAires = BuenosAiresClass()
 
-class PepitaCls():
-  def piar(self):
-    print("hola mundo!")
-    return None
-    
-Pepita = PepitaCls()
-
 
 # module Iruya
 #   def self.kilometr(self):
@@ -28,10 +21,16 @@ Pepita = PepitaCls()
 #     "♪ una voz antigua de viento y de sal ♫"
 
 
+class PepitaCls():
+  def cantar(self):
+    print('priiiip priiiip')
+    return None 
 
-# module Norita
-#   def self.cantar!
-#     'priiiip priiiip'
+class NoritaCls(PepitaCls):
+  pass
+
+Pepita = PepitaCls()
+Norita = NoritaCls()
 
 
 #   def self.volar_en_circulos!
