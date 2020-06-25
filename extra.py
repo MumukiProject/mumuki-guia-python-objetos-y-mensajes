@@ -4,6 +4,14 @@ class BuenosAiresClass:
 
 BuenosAires = BuenosAiresClass()
 
+class PepitaCls():
+  def piar(self):
+    print("hola mundo!")
+    return None
+    
+Pepita = PepitaCls()
+
+
 # module Iruya
 #   def self.kilometr(self):
 #     1710
