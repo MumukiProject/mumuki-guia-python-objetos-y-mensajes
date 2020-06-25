@@ -1,8 +1,11 @@
-describe 'Pepita debe':
-  it 'haber perdido energía':
-    expect(Pepita.energia).to eq 3580
-
-
-  it 'estar en Oberá':
-    expect(Pepita.ciudad).to eq Obera
-
+class tests(unittest):
+  def test_haber_perdido_energia(self):
+    """haber perdido energía"""
+    assertEqual(Pepita.energia,3580)
+    
+  def test_estar_en_Obera(self):
+    """estar en Oberá"""
+    assertTrue(isInstance(Pepita.ciudad,Obera))
+    
+    
+    
