@@ -1,7 +1,7 @@
 ---
 locale: es
 tags: []
-layout: input_right
+layout: input_bottom
 editor: 0
 type: playground
 extra_visible: false
