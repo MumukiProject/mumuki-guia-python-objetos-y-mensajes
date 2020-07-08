@@ -20,18 +20,25 @@ BuenosAires = BuenosAiresClass()
 #   def self.cantar!
 #     "♪ una voz antigua de viento y de sal ♫"
 
+class pajaritoCls():
+  pio='priiiip priiiip'
 
-class PepitaCls():
+  def __init__(self,nombre="Pajarito"):
+    self.nombre=nombre
+
   def cantar(self):
-    print('priiiip priiiip')
-    return None 
+    print(self.__class__.pio)
+    return None
 
-class NoritaCls(PepitaCls):
-  pass
 
-Pepita = PepitaCls()
-Norita = NoritaCls()
+  def __repr__(self):
+    pio=pajaritoCls.pio
+    return pio+" soy "+self.nombre
 
+
+Pepita = pajaritoCls(nombre="Pepita")
+Norita = pajaritoCls(nombre="Norita")
+Pajarito = pajaritoCls()
 
 #   def self.volar_en_circulos!
 
