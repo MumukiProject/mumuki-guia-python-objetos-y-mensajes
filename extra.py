@@ -27,7 +27,7 @@ class pajaritoCls():
     self.nombre=nombre
 
   def cantar(self):
-    print(self.__class__.pio)
+    print(pajaritoCls.pio)
     return None
 
 
