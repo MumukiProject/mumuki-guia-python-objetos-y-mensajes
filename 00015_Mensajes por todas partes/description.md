@@ -1,4 +1,4 @@
-Es fácil ver que en `Pepita.volar_hacia!(Barreal)` el objeto receptor es `Pepita`, el mensaje `volar_hacia!` y el argumento [`Barreal`](https://es.wikipedia.org/wiki/Barreal); pero ¿dónde queda eso de objeto y mensaje cuando hacemos, por ejemplo, `2 + 3`?
+Es fácil ver que en `Pepita.volar_hacia(Barreal)` el objeto receptor es `Pepita`, el mensaje `volar_hacia()` y el argumento [`Barreal`](https://es.wikipedia.org/wiki/Barreal); pero ¿dónde queda eso de objeto y mensaje cuando hacemos, por ejemplo, `2 + 3`?
 
 Como ya dijimos, todas nuestras interacciones en un ambiente de objetos ocurren enviando mensajes y las operaciones aritméticas **no son la excepción** a esta regla.
 
