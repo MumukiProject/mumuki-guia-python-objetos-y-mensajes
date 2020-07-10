@@ -7,15 +7,15 @@
  
  ```
  Pepita: cantar!  - Catellano -
- Pepita::cantar   - C++ -
- cantar(Pepita)   - tu propio idioma?? - 
+ Pepita::cantar   - tu propio idioma?? -   
+ cantar(Pepita)   - otro idioma inventado - 
  ```
 
 
 Y si queremos aplicar el mismo programa pero a otro objeto, por ejemplo `Norita`, sería `Norita.cantar()`. Igual que antes, en otros lenguajes  podría ser:
  
  ```
- Norita: cantar!
- Norita<-cantar
- cantar(Norita)
+ Norita: cantar!  - Catellano -
+ Norita<-cantar   - tu propio idioma?? -
+ cantar(Norita)   - otro idioma inventado -
  ```
