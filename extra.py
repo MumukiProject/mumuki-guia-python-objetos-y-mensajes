@@ -47,12 +47,12 @@ class pajaritoClass():
     return result
 
   def cantar(self):
-    print(pajaritoClass.pio)
-    return None
+    result = type(self).pio
+    return result
 
   def __repr__(self):
-    pio=pajaritoClass.pio
-    return pio+" soy "+self.nombre
+    result=type(self).pio+" soy "+self.nombre
+    return result
 
   @property
   def energia(self):
@@ -81,8 +81,7 @@ class pajaritoClass():
   def cantar(self):
     #   def self.cantar!
     #     'pri pri pri'
-    print('pri pri pri')
-    return None
+    return type(self).pio
 
   def comer_lombriz(self):
     #   def self.comer_lombriz!
@@ -125,12 +124,12 @@ Pepita.ciudad = Obera
 
 Norita = pajaritoClass(nombre="Norita")
 Mercedes  = pajaritoClass(nombre="Mercedes")
-Pajarito = pajaritoClass()
 
 def mercedes_cantar():
   # module Mercedes
   #   def self.cantar!
   #     "♪ una voz antigua de viento y de sal ♫"
-  print("♪ una voz antigua de viento y de sal ♫")
+  result = "♪ una voz antigua de viento y de sal ♫"
+  return result
 
 Mercedes.cantar=mercedes_cantar #TODO: extender la clase?
