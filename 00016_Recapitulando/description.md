@@ -3,7 +3,7 @@ En un mundo de objetos, todo lo que tenemos son **objetos** y **mensajes**. A es
 ム **Mensajes de palabra clave**. Su nombre está compuesto por una o varias palabras, puede terminar con un signo de exclamación `!` o de pregunta `?`, y se envía mediante un punto. Además,
 
 * pueden no tomar argumentos, como `Rayuela.anio_de_edicion`;
-* o pueden tomar uno o más argumentos, separados por coma: `SanMartin.cruzar!(LosAndes, Mula)`.
+* o pueden tomar uno o más argumentos, separados por coma: `SanMartin.cruzar(LosAndes, Mula)`.
 
 ム **Operadores**. Son todos aquellos cuyo "nombre" se compone de uno o más símbolos, y se envían simplemente escribiendo dichos símbolos. En cuanto a los argumentos,
 

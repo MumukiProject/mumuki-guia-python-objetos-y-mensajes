@@ -1,94 +1,135 @@
-class BuenosAiresClass:
+#
+# extra.py: traido de la guia XXX (link al repo+commit)
+#
+
+class ciudadClass:
+  def __init__(self,kilometros):
+    self._kilometros=kilometros
+
+  @property
   def kilometros(self):
-    return 0
+    #validacion
+    return self._kilometros
 
-BuenosAires = BuenosAiresClass()
+  def distancia(self, una_ciudad):
+    #   def self.distancia(self, una_ciudad):
+    #     (self.ciudad.kilometro - una_ciudad.kilometro).abs
+    return abs(self.kilometros - una_ciudad.kilometros)
 
+
+Ushuaia = ciudadClass(0) # cercana al centro geográfico de Argentina según https://www.ign.gob.ar/gallery-app/mapas-escolares/medium/argentina_bicontinental_fisico.jpg
+
+BuenosAires = ciudadClass(2360) #CABA está lejos de muuchas ciudades, incluyendo al centro geográfico de Argentina: https://es.wikipedia.org/wiki/Ushuaia
 
 # module Iruya
 #   def self.kilometr(self):
 #     1710
-
+Iruya=ciudadClass(kilometros=4070) #mantinene distancia con BuenosAires, pero no respeta https://es.wikipedia.org/wiki/Ushuaia
 
 # module Obera
 #   def self.kilometr(self):
 #     1040
+Obera=ciudadClass(kilometros=3400) #mantinene distancia con BuenosAires según https://es.wikipedia.org/wiki/Ushuaia
 
 
 
-# module Mercedes
-#   def self.cantar!
-#     "♪ una voz antigua de viento y de sal ♫"
-
-class pajaritoCls():
+class pajaritoClass():
   pio='priiiip priiiip'
 
   def __init__(self,nombre="Pajarito"):
     self.nombre=nombre
+    self._energia=0
+
+  def __eq__(self,other):
+    # necesario para 00003_El derecho a la Identidad
+    # TODO: obj1==obj2 no funciona en el runner
+    result = (id(self)==id(other))
+    return result
 
   def cantar(self):
-    print(pajaritoCls.pio)
-    return None
-
+    result = type(self).pio
+    return result
 
   def __repr__(self):
-    pio=pajaritoCls.pio
-    return pio+" soy "+self.nombre
+    result=type(self).pio+" soy "+self.nombre
+    return result
+
+  @property
+  def energia(self):
+    return self._energia
+
+  @energia.setter
+  def energia(self,ahora_vale):
+    #energia.setter
+    #
+    #   def self.energia=(self, una_energia):
+    #     self.energia = una_energia
+    #   def self.energi(self):
+    #     self.energia
+    self._energia=ahora_vale     #validacion?
 
 
-Pepita = pajaritoCls(nombre="Pepita")
-Norita = pajaritoCls(nombre="Norita")
-Pajarito = pajaritoCls()
+  @property
+  def ciudad(self):
+    return self._ciudad
 
-#   def self.volar_en_circulos!
+  @ciudad.setter
+  def ciudad(self,ahora_es):
+    #ciudad.setter: validacion? TODO: usar volar_hacia() ?
+    self._ciudad=ahora_es
 
+  def cantar(self):
+    #   def self.cantar!
+    #     'pri pri pri'
+    return type(self).pio
 
-#   def self.comer_lombriz!
+  def comer_lombriz(self):
+    #   def self.comer_lombriz!
+    #     self.energia += 20
+    #     return
+    self.energia += 20
+    return self.energia
 
+  def comer_alpiste(self,energia_adicional):
+    #   def self.comer_alpiste!(self, una_energia):
+    #     self.energia += una_energia * 15
+    #     return
+    self.energia += energia_adicional * 15
+    return self.energia
 
+  def volar_en_circulos(self):
+    #   def self.volar_en_circulos!
+    #     self.energia -= 10
+    #     return
+    self.energia -= 10
+    return self.energia
 
+  def volar_hacia(self, ciudad_destino):
+    #   def self.volar_hacia!(self, una_ciudad):
+    #     self.energia -= self.distancia(una_ciudad) * 3
+    #     self.ciudad = una_ciudad
+    #     return
+    self.energia -= self.ciudad.distancia(ciudad_destino) * 3
+    self.ciudad = ciudad_destino
+    return
+
+#   def self.distancia(self, una_ciudad): #pasado a ciudadCls
+
+Pepita = pajaritoClass(nombre="Pepita")
 # module Pepita
 #   self.energia = 100
 #   self.ciudad = Obera
+Pepita.energia = 100
+Pepita.ciudad = Obera
 
-#   def self.energia=(self, una_energia):
-#     self.energia = una_energia
+Norita = pajaritoClass(nombre="Norita")
+Mercedes  = pajaritoClass(nombre="Mercedes")
 
+def mercedes_cantar():
+  # module Mercedes
+  #   def self.cantar!
+  #     "♪ una voz antigua de viento y de sal ♫"
+  result = "♪ una voz antigua de viento y de sal ♫"
+  return result
 
-#   def self.energi(self):
-#     self.energia
-
-
-#   def self.ciuda(self):
-#     self.ciudad
-
-
-#   def self.cantar!
-#     'pri pri pri'
-
-
-#   def self.comer_lombriz!
-#     self.energia += 20
-#     return
-
-
-#   def self.comer_alpiste!(self, una_energia):
-#     self.energia += una_energia * 15
-#     return
-
-
-#   def self.volar_en_circulos!
-#     self.energia -= 10
-#     return
-
-
-#   def self.volar_hacia!(self, una_ciudad):
-#     self.energia -= self.distancia(una_ciudad) * 3
-#     self.ciudad = una_ciudad
-#     return
-
-
-#   def self.distancia(self, una_ciudad):
-#     (self.ciudad.kilometro - una_ciudad.kilometro).abs
-
-
+Mercedes.cantar=mercedes_cantar #TODO: extender la clase?

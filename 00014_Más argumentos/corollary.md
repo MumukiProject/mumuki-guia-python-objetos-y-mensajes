@@ -1,3 +1,3 @@
 ¡Perfecto! :tada:
 
-Un detalle: en Python, _a veces_, los paréntesis son opcionales. Para no confundirte, vamos a omitirlos **solamente** cuando el mensaje no tenga argumentos (como en `Pepita.energia`) y los pondremos siempre que los tenga (como en `Pepita.volar_hacia!(Obera)`).
+Un detalle: en Python, los paréntesis son obligatorios siempre que  se _invoque un método_. **Incluso** cuando el mensaje no tenga argumentos (como en `Pepita.cantar()`, comparalo con el mensaje  `Pepita.volar_hacia(Obera)`).
