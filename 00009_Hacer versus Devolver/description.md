@@ -1,6 +1,6 @@
 Cuando se envía un mensaje a un objeto, y este lo entiende, puede reaccionar de dos formas diferentes: 
 
-* Podría _producir un efecto_, es decir hacer algo. Por ejemplo, el mensaje `cantar()` reproduce el sonido del canto de `Pepita`.
+* Podría _producir un efecto_, es decir _hacer_ algo. Por ejemplo, el mensaje `cantar()` reproduce el sonido del canto de `Pepita`.
 * O también podría _devolver otro objeto_. Por ejemplo el mensaje `energia` devuelve siempre un número.
 
 :warning: _En realidad, un mensaje podría reaccionar con una combinación de las formas anteriores: tener un efecto y devolver algo. Pero esto es una **muy mala idea**._
