@@ -1,14 +1,14 @@
-interfaz_pepita = %w(
-  energia
-  cantar!
-  comer_lombriz!
-  volar_en_circulos!
+interfaz_pepita = (
+  "energia",
+  "cantar()",
+  "comer_lombriz()",
+  "volar_en_circulos()"
 )
   
-interfaz_norita = %w(
-  #...completar acá...
+interfaz_norita =(
+  #...completar acá... recordando las comillas y las comas, así: "mensaje",
 )
   
-interfaz_mercedes = %w(
+interfaz_mercedes = (
   #...completar acá...
 )
