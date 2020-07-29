@@ -1,36 +1,51 @@
 #
 # extra.py: traido de la guia XXX (link al repo+commit)
 #
+import collections
+
+ciudad_anterior = collections.namedtuple("ciudad_anterior", "nombre energia_partida")
 
 class ciudadClass:
-  def __init__(self,kilometros):
+  def __init__(self,nombre="Estación Espacial Internacional",kilometros=36000):
+    self._nombre=nombre
     self._kilometros=kilometros
 
   @property
+  def nombre(self):
+    return self._nombre
+
+  @nombre.setter
+  def nombre(self,ahora_vale):
+    raise ValueError("'nombre' vale '{}', se fijó durante su  creación y no se puede cambiar".format(self.nombre))
+    return None
+
+  @property
   def kilometros(self):
-    #validacion
     return self._kilometros
 
-  def distancia(self, una_ciudad):
+  def distancia_con(self, una_ciudad):
     #   def self.distancia(self, una_ciudad):
     #     (self.ciudad.kilometro - una_ciudad.kilometro).abs
     return abs(self.kilometros - una_ciudad.kilometros)
 
+  def __repr__(self):
+    return self.nombre
 
-Ushuaia = ciudadClass(0) # cercana al centro geográfico de Argentina según https://www.ign.gob.ar/gallery-app/mapas-escolares/medium/argentina_bicontinental_fisico.jpg
+Ushuaia = ciudadClass("Ushuaia",0) # cercana al centro geográfico de Argentina según https://www.ign.gob.ar/gallery-app/mapas-escolares/medium/argentina_bicontinental_fisico.jpg
 
-BuenosAires = ciudadClass(2360) #CABA está lejos de muuchas ciudades, incluyendo al centro geográfico de Argentina: https://es.wikipedia.org/wiki/Ushuaia
+BuenosAires = ciudadClass("BuenosAires",2360) #CABA está lejos de muuchas ciudades, incluyendo al centro geográfico de Argentina: https://es.wikipedia.org/wiki/Ushuaia
+Buenos_Aires = BuenosAires
 
 # module Iruya
 #   def self.kilometr(self):
 #     1710
-Iruya=ciudadClass(kilometros=4070) #mantinene distancia con BuenosAires, pero no respeta https://es.wikipedia.org/wiki/Ushuaia
+Iruya=ciudadClass(nombre="Iruya", kilometros=4070) #mantinene distancia con BuenosAires, pero no respeta https://es.wikipedia.org/wiki/Ushuaia
 
-# module Obera
+# module Oberá
 #   def self.kilometr(self):
 #     1040
-Obera=ciudadClass(kilometros=3400) #mantinene distancia con BuenosAires según https://es.wikipedia.org/wiki/Ushuaia
-
+Oberá=ciudadClass(nombre="Oberá", kilometros=3400) #mantinene distancia con BuenosAires según https://es.wikipedia.org/wiki/Ushuaia
+Obera=Oberá
 
 
 class pajaritoClass():
@@ -38,7 +53,10 @@ class pajaritoClass():
 
   def __init__(self,nombre="Pajarito"):
     self.nombre=nombre
+    self._ciudad=None
     self._energia=0
+    self.ciudades_anteriores=list()
+
 
   def __eq__(self,other):
     # necesario para 00003_El derecho a la Identidad
@@ -94,7 +112,7 @@ class pajaritoClass():
     #   def self.comer_alpiste!(self, una_energia):
     #     self.energia += una_energia * 15
     #     return
-    self.energia += energia_adicional * 15
+    self.energia += energia_adicional * 15 #TODO: validar entrada
     return self.energia
 
   def volar_en_circulos(self):
@@ -109,18 +127,29 @@ class pajaritoClass():
     #     self.energia -= self.distancia(una_ciudad) * 3
     #     self.ciudad = una_ciudad
     #     return
-    self.energia -= self.ciudad.distancia(ciudad_destino) * 3
-    self.ciudad = ciudad_destino
-    return
+
+    if self.ciudad is None:
+      nombre_desde = None
+    else:
+      nombre_desde = self.ciudad.nombre
+    volar_desde=ciudad_anterior(nombre=nombre_desde, energia_partida=self.energia)
+    if True:# TODO: validar energia necesaria, energia actual, destino
+      self.ciudades_anteriores.append(volar_desde)
+      if self.ciudad is not None:
+        self.energia -= self.ciudad.distancia_con(ciudad_destino) * 3
+      self.ciudad = ciudad_destino
+    else:
+      pass
+    return self.ciudad
 
 #   def self.distancia(self, una_ciudad): #pasado a ciudadCls
 
 Pepita = pajaritoClass(nombre="Pepita")
 # module Pepita
 #   self.energia = 100
-#   self.ciudad = Obera
+#   self.ciudad = Oberá
 Pepita.energia = 100
-Pepita.ciudad = Obera
+Pepita.ciudad = Oberá
 
 Norita = pajaritoClass(nombre="Norita")
 Mercedes  = pajaritoClass(nombre="Mercedes")

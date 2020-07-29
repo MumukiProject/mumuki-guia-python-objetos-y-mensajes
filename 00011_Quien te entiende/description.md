@@ -1,4 +1,4 @@
-Ya vimos que un objeto puede entender múltiples mensajes, y esos mensajes conforman su interfaz. 
+Ya vimos que un objeto puede entender múltiples mensajes, y esos mensajes conforman su **interfaz**. 
 
 ¿Pero podría haber más de un objeto que entienda los mismos mensajes? 
 
