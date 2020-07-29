@@ -7,9 +7,7 @@
     * `Norita.volar_en_circulos()` 
 
 
-
-
-Como descubrimos en el ejercicio "un poco de sintaxis" y "hacer vs devolver",  los mensajes **con efecto** (es decir, que _hacen_ algo) llevan un paréntesis al final. Es decir, es parte de la "sintaxis de Python" usar los paréntesis al final  para distinguir esos dos tipos de mensaje.  
+Como descubrimos en ejercicios anteriores,  los mensajes **con efecto** (es decir, que _hacen_ algo) llevan un paréntesis al final. Es decir, esos paréntesis al final del mensaje son parte de la "sintaxis" de Python.  
 
 > En la cancha se ven los p...pájaros! :wink:, escribí un primer programa que consista en hacer que `Pepita` coma y vuele hasta quedarse con 150 unidades de energía. **Acordate que `Pepita` arranca con la energía en 100.**
 

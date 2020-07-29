@@ -1,6 +1,9 @@
 #
 # extra.py: traido de la guia XXX (link al repo+commit)
 #
+import collections
+
+ciudad_anterior = collections.namedtuple("ciudad_anterior", "nombre energia_partida")
 
 class ciudadClass:
   def __init__(self,nombre="Estación Espacial Internacional",kilometros=36000):
@@ -52,6 +55,8 @@ class pajaritoClass():
     self.nombre=nombre
     self._ciudad=None
     self._energia=0
+    self.ciudades_anteriores=list()
+
 
   def __eq__(self,other):
     # necesario para 00003_El derecho a la Identidad
@@ -107,7 +112,7 @@ class pajaritoClass():
     #   def self.comer_alpiste!(self, una_energia):
     #     self.energia += una_energia * 15
     #     return
-    self.energia += energia_adicional * 15
+    self.energia += energia_adicional * 15 #TODO: validar entrada
     return self.energia
 
   def volar_en_circulos(self):
@@ -122,9 +127,19 @@ class pajaritoClass():
     #     self.energia -= self.distancia(una_ciudad) * 3
     #     self.ciudad = una_ciudad
     #     return
-    if self.ciudad is not None:
-      self.energia -= self.ciudad.distancia_con(ciudad_destino) * 3
-    self.ciudad = ciudad_destino
+
+    if self.ciudad is None:
+      nombre_desde = None
+    else:
+      nombre_desde = self.ciudad.nombre
+    volar_desde=ciudad_anterior(nombre=nombre_desde, energia_partida=self.energia)
+    if True:# TODO: validar energia necesaria, energia actual, destino
+      self.ciudades_anteriores.append(volar_desde)
+      if self.ciudad is not None:
+        self.energia -= self.ciudad.distancia_con(ciudad_destino) * 3
+      self.ciudad = ciudad_destino
+    else:
+      pass
     return self.ciudad
 
 #   def self.distancia(self, una_ciudad): #pasado a ciudadCls
