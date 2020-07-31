@@ -14,3 +14,7 @@ def test_Pepita_quedó_con_energia_correcta(self):
   result = 150
   self.assertEqual(result, Pepita.energia, "El mensaje `Pepita.energia` debería devolver `{}`. En otras: palabras el atributo 'energía' de Pepita no tiene el valor pedido ".format(result))
   pass
+
+
+def test_inspect(self):
+  self.assertTrue(False,str(dir()))
