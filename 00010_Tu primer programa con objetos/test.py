@@ -1,6 +1,10 @@
 #...extra...#
 #...content...#
 #...solution...#
+#...solution[0]...#
+#...solution[1]...#
+#...solution[-1]...#
+
 
 def test_Pepita_quedó_con_energia_correcta(self):
   #Pepita = pajaritoClass("Pepita")
