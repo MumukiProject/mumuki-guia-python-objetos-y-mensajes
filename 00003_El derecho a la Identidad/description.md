@@ -9,8 +9,12 @@ En Python, podemos comparar por identidad a dos objetos utilizando el operador `
 > ¡Intentalo por tu propia cuenta! Ejecutá las siguientes pruebas en la consola:
 >
 ```python
+ム 1 == 0
+ム 1 == 1
+ム 1 == 2
 ム Pepita == Norita
 ム Norita == Pepita
 ム Norita == Norita
 ム "hola" == "chau"
+ム True == False
 ```
