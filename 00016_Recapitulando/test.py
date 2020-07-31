@@ -3,7 +3,7 @@ class Test(unittest.TestCase):
 
 
 
-  def test_Pepita_quedó_en_la_ciudad_correcta(self):
+  def test_00016_Pepita_quedó_en_la_ciudad_correcta(self):
     # describe 'Pepita':
     #  before(:each) { Pepita.volar_hacia!(Oberá) }
     #  it 'vuela a Iruya':
@@ -12,7 +12,7 @@ class Test(unittest.TestCase):
     self.assertEqual(result, Pepita.ciudad.nombre, " la ciudad debería ser '{}' ".format(result))
     pass
 
-  def test_Pepita_pasó_por_Iruya(self):
+  def test_00016_Pepita_pasó_por_Iruya(self):
     # describe 'Pepita':
     #  before(:each) { Pepita.volar_hacia!(Oberá) }
     #  it 'vuela a Iruya':
@@ -24,7 +24,7 @@ class Test(unittest.TestCase):
                     " '{}' es una ciudad_importante y debería  ser parte del itinerario".format(ciudad_importante))
     pass
 
-  def test_Pepita_quedó_con_energia_correcta(self):
+  def test_00016_Pepita_quedó_con_energia_correcta(self):
     """ 1. Coma 90 gramos de alpiste. :rice:
         > 1. Vuele a Iruya. :earth_americas:
         > 1. Finalmente, coma tanto alpiste como el 10% de la energía que le haya quedado"""

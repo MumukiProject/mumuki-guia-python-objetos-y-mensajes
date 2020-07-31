@@ -1,6 +1,6 @@
-En un mundo de objetos, todo lo que manejamos son **objetos** y **mensajes**. Los mensajes pueden aludir a algo que *tiene* el objeto (llamado técnicamente *atributo*) o algo que el objeto *hace* (llamado técnicamente *método* ) A estos últimos, podemos distinguirlos por la forma en que se escriben:
+En un mundo de objetos, todo lo que manejamos son **objetos** y **mensajes**. Los mensajes pueden aludir a algo que *tiene* el objeto (llamado técnicamente *atributo*) o algo que el objeto *hace* (llamado técnicamente *método* ) A estos últimos, podemos distinguirlos según la forma en que se escriben:
 
--  **Mensajes con paréntesis**. Su nombre está compuesto por una palabra o varias palabras (siempre `unidas_por_espacios_subrayados` o `indicadasPorMayusculasEnCamello`), **no puede** terminar con un signo de exclamación `!` o de pregunta `?`, va unido al objeto mediante un puntito. Además,
+ム **Mensajes con paréntesis**. Su nombre está compuesto por una palabra o varias palabras (siempre unidas_por_espacios_subrayados o indicadasPorMayusculasEnCamello), **no puede** terminar con un signo de exclamación `!` o de pregunta `?`, y se indica el objecto  mediante un punto. Además,
 
 * pueden tomar uno o más argumentos, separados por coma: 
     * `San_Martin.cruzar_donde_como(losAndes, Mula)`
@@ -9,7 +9,7 @@ En un mundo de objetos, todo lo que manejamos son **objetos** y **mensajes**. Lo
     * como `San_Martin.pensar_algo()`
     * como `SanMartin.pensarAlgo()`
 
-- **Operadores**. Son todos aquellos cuyo "nombre" es apenas un símbolo (a veces, mas de uno como `==` , `!=`, `<>`), y se envían simplemente escribiendo dichos símbolos. En cuanto a los argumentos,
+ム **Operadores**. Son todos aquellos cuyo "nombre" es un símbolo (a veces, mas de uno como == , !=, <>), y se envían simplemente escribiendo dichos símbolos. En cuanto a los argumentos,
 
 * Los operadores pueden tomar un argumento, como el operador  `==` en la sentencia  `Orson.energia == Garfield.energia` o el operador `+` en la sentencia `objeto.energia + 80`.
 * pueden no tomar ninguno, como la negación `!CaraMoneda`;
