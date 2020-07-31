@@ -1,13 +1,14 @@
 
-Para calcular el 20%  que buscamos, podemos usar la Regla de 3:
 
+> Para calcular el 20%  que buscamos, podemos usar la Regla de 3:
+>
 > 100% <----> total   
 >  20% <----> ?????   
- 
- resultado:  total * 20% / 100%    
- resultado:  total * 0.20    
+> 
+> resultado:  total * 20% / 100%    
+> resultado:  total * 0.20    
 
-Como usamos esa cuenta en nuestro programa?   
+Como usamos esa cuenta en nuestro programa?    
 Veamos, cualquier envío de mensajes que devuelva algo es una expresión válida, y puede ser usada en cualquier lugar en que se espera un objeto. Por ejemplo, las siguientes colaboraciones son válidas:
 
 ```python
@@ -24,7 +25,7 @@ Qué pasó recién?? vamos por línea por línea:
     1. Python aplica el operador `*` al objeto `12`  (si! en :snake: *todo* lo que vemos es un objeto!). 
     1. envía el mensaje `cargar_combustible(36)` con el resultado
      
-* línea3: parecido a la línea2, pero ahora :snake: hace cuatro pasos:
+* línea3: parecido a la línea2, pero ahora :snake:  hace cuatro pasos:
     1. busca el valor `capacidad_tanque_combustible` 
     1. busca el valor `combustible_disponible` 
     1. aplica el operador `-` al primer valor, supongamos que resulte `36`

@@ -8,4 +8,4 @@ Pero esto no parece ser muy útil. ¿Qué cosas sabrán __hacer__ las golondrina
 > ム Pepita.cantar()
 > ```
 
-Si la forma `Pepita.cantar()` te resulta una extraña manera de  "enviarle un mensaje" a `Pepita`, te sugerimos ver la sección "Dame una pista" :point_down:
+Si el comando `Pepita.cantar()` te resulta una extraña manera de  *enviar un mensaje* a `Pepita`, te sugerimos ver la sección ":bulb: Dame una pista" :point_down: :point_down: :point_down:

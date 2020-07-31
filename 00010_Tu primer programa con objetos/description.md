@@ -11,6 +11,6 @@ Como descubrimos en ejercicios anteriores,  los mensajes **con efecto** (es deci
 
 > En la cancha se ven los p...pájaros! :wink:, escribí un primer programa que consista en hacer que `Pepita` coma y vuele hasta quedarse con 150 unidades de energía. **Acordate que `Pepita` arranca con la energía en 100.**
 
-Hay mas info en "¡Dame una pista!"   
+Hay mas info en ":bulb: ¡Dame una pista!"   :point_down:
    
    

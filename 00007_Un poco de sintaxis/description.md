@@ -6,7 +6,7 @@
 4. `Pepita` es el **objeto** receptor del mensaje.
 
 :warning:
-Es importante respetar la sintaxis del envío de mensajes. Por ejemplo, las siguientes NO son colaboraciones validas, porque no funcionan o no hacen lo que deben:
+Es importante respetar la *sintaxis* del envío de mensajes. Por ejemplo, las siguientes NO son colaboraciones validas, porque no funcionan o no hacen lo que deben:
 
 ```python
 ム energia
