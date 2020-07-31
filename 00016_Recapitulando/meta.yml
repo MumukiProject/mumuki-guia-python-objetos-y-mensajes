@@ -1,10 +1,12 @@
 ---
 locale: es
-tags: []
+tags:
+- Coma-90-gramos-de-alpiste.--Vuele-a-Iruya.--Allí,-coma-tantos-gramos-de-alpiste-como-el-10%-de-la-energía-que-le-haya-quedado.
 layout: input_bottom
 editor: code
 type: problem
 extra_visible: false
+teacher_info: ''
 manual_evaluation: false
 choices: []
 name: Recapitulando
