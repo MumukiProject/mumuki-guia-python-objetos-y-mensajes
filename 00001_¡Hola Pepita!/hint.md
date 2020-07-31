@@ -4,7 +4,7 @@ Usarla es muy sencillo: escribí lo que querés probar y luego presioná la tecl
 
 Tiene un *historial de comandos* que podés acceder con las flechas del teclado: :arrow_up: y :arrow_down:
 
-En los ejemplos y ayudas, vas a ver la consola representada así:
+En los ejemplos y ayudas, vas a ver la `>_Consola` representada así:
 
 ```python
 ム comando1
