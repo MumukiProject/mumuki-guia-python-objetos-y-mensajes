@@ -1,5 +1,8 @@
 #...extra...#
-def test_00010_Pepita_quedó_con_energia_correcta(self):
+#...content...#
+
+
+def test_Pepita_quedó_con_energia_correcta(self):
   #Pepita = pajaritoClass("Pepita")
   #for _ in range(8):
   #      Pepita. comer_lombriz()  #+20
