@@ -2,7 +2,6 @@
     # describe 'Pepita':
     #  before(:each) { Pepita.volar_hacia!(Oberá) }
     #  it 'vuela a Iruya':
-    #...content...#
     result = "Ushuaia"
     self.assertEqual(result, Pepita.ciudad.nombre, " la ciudad debería ser '{}' ".format(result))
     pass
@@ -11,7 +10,6 @@
     # describe 'Pepita':
     #  before(:each) { Pepita.volar_hacia!(Oberá) }
     #  it 'vuela a Iruya':
-    #...content...#
     ciudad_importante = "Iruya"
     itinerario = Pepita.ciudades_anteriores
     result = any(ciudad_visitada.nombre == ciudad_importante for ciudad_visitada in itinerario)
