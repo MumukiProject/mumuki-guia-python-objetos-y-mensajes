@@ -1,3 +1,4 @@
+class Test(unittest.TestCase):
   def test_Pepita_quedó_en_la_ciudad_correcta(self):
     # describe 'Pepita':
     #  before(:each) { Pepita.volar_hacia!(Oberá) }
