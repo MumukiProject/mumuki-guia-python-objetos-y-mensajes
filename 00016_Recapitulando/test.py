@@ -14,7 +14,7 @@ class Test(unittest.TestCase):
     ciudad_importante = Iruya
     itinerario = Pepita.ciudades_anteriores
     result = any(ciudad_visitada == ciudad_importante for ciudad_visitada in itinerario)
-    result= str([ciudad_visitada.nombre  for ciudad_visitada in itinerario])
+    result = str([ciudad_visitada.nombre  for ciudad_visitada in itinerario])
     self.assertTrue(result=="",
                     " Iruya es una ciudad importante y debería  ser parte del itinerario ({})".format(resut))
     pass
