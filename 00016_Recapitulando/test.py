@@ -4,7 +4,7 @@ class Test(unittest.TestCase):
     #  before(:each) { Pepita.volar_hacia!(Oberá) }
     #  it 'vuela a Iruya':
     result = Pepita.ciudad
-    self.assertEqual(result, Ushuaia, " la ciudad debería ser '{}' ".format(result))
+    self.assertEqual(result, Ushuaia, " la ciudad final debería ser '{}' ".format(Ushuaia))
     pass
   
   def test_Pepita_pasó_por_Iruya(self):

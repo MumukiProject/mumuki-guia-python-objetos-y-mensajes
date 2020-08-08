@@ -22,6 +22,6 @@ Como vimos, también se pueden escribir como mensajes de palabra clave (aunque n
 > 1. Coma 90 gramos de alpiste. :rice:
 > 1. Vuele a Iruya. :earth_americas:
 > 1. Allí, coma tantos gramos de alpiste como el 10% de la energía que le haya quedado.  :rice:
-> 1. Finalmente, Vuele al centro geográfico de Argentina (Ishuaia). :earth_americas:
+> 1. Finalmente, Vuele al centro geográfico de Argentina (Ushuaia). :earth_americas:
 >
 > Este programa tiene cumplir el enunciado sin importar con cuanta energía arranque `Pepita`.
