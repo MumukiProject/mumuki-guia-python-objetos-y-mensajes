@@ -54,7 +54,7 @@ class pajaritoClass():
   def __init__(self,nombre="Pajarito"):
     self.nombre=nombre
     self._ciudad=None
-    self._energia=0
+    self._energia=100 #ej10
     self.ciudades_anteriores=list()
 
 
@@ -105,7 +105,7 @@ class pajaritoClass():
     #   def self.comer_lombriz!
     #     self.energia += 20
     #     return
-    self.energia += 20
+    self.energia += 20 #ej10
     return self.energia
 
   def comer_alpiste(self,energia_adicional):
@@ -113,13 +113,17 @@ class pajaritoClass():
     #     self.energia += una_energia * 15
     #     return
     self.energia += energia_adicional * 15 #TODO: validar entrada
+    # no seria mejor asi:
+    #def comer_alpiste(self, gramos):
+    # energia_adicional = gramos * 15
+    # self.energia += energia_adicional
     return self.energia
 
   def volar_en_circulos(self):
     #   def self.volar_en_circulos!
     #     self.energia -= 10
     #     return
-    self.energia -= 10
+    self.energia -= 10 #ej10
     return self.energia
 
   def volar_hacia(self, ciudad_destino):

@@ -1,14 +1,13 @@
-interfaz_pepita = (
+interfaz_pepita = [
   "energia",
   "cantar()",
   "comer_lombriz()",
-  "volar_en_circulos()"
-)
+  "volar_en_circulos()"]
   
-interfaz_norita =(
+interfaz_norita = [
   #...completar acá... recordando las comillas y las comas, así: "mensaje",
-)
+]
   
-interfaz_mercedes = (
+interfaz_mercedes = [
   #...completar acá...
-)
+]

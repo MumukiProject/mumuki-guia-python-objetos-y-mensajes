@@ -1,10 +1,6 @@
-
-
 class Test(unittest.TestCase):
-  def test_inspect(self):
-    self.assertTrue(False,dir(self))
-    
-  def test_inspect2(self):
-    self.assertTrue(False,locals())
-    
-  
+    def test_Pepita_quedó_con_energia_correcta(self):
+        result = Pepita.energia
+        self.assertEqual(result, 150,
+                         "El mensaje `Pepita.energia` debería devolver {}. En otras: palabras el atributo `energía` de Pepita no tiene el valor pedido".format(
+                             result))
