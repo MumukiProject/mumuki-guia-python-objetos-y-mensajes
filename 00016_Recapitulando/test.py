@@ -16,7 +16,7 @@ class Test(unittest.TestCase):
     result = any(ciudad_visitada == ciudad_importante for ciudad_visitada in itinerario)
     result= str([ciudad_visitada.nombre  for ciudad_visitada in itinerario])
     self.assertTrue(result=="",
-                    " '{}' es una ciudad importante y debería  ser parte del itinerario".format(ciudad_importante))
+                    " Iruya es una ciudad importante y debería  ser parte del itinerario ({})".format(resut))
     pass
   
   def test_Pepita_quedó_con_energia_correcta(self):
