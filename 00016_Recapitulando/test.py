@@ -15,8 +15,7 @@ class Test(unittest.TestCase):
     itinerario = Pepita.ciudades_anteriores
     itinerario = [ciudad_visitada.nombre  for ciudad_visitada in itinerario]
     #result = any(ciudad_visitada == ciudad_importante for ciudad_visitada in itinerario) #TODO: no anda?
-    result = "Iruya" in itinerario
-    self.assertTrue(result,
+    self.assertTrue("Iruya" in itinerario ,
                     " Iruya es una ciudad importante y debería  ser parte del itinerario ({})".format(itinerario))
     pass
   
