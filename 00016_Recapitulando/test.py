@@ -23,6 +23,7 @@ class Test(unittest.TestCase):
         > 1. Vuele a Iruya. :earth_americas:
         > 1. Finalmente, coma tanto alpiste como el 10% de la energía que le haya quedado"""
     result = 850
+    result = -73385 #lo qué???
     self.assertEqual(result, Pepita.energia, " la energía residual debería ser {} ".format(result))
     pass
   #
