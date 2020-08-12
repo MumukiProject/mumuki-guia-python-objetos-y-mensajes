@@ -2,32 +2,10 @@
 locale: es
 tags: []
 layout: input_right
-editor: multiple_choice
+editor: code
 type: problem
 extra_visible: false
-language: text
 teacher_info: ''
 manual_evaluation: false
-choices:
-- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: energia
-  checked: true
-- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: volar_en_circulos()
-  checked: true
-- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: cantar()
-  checked: true
-- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: comer_lombriz()
-  checked: true
-- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: cilindrada
-  checked: false
-- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: recitar_a_Benedetti()
-  checked: false
-- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  value: cocinar()
-  checked: false
+choices: []
 name: Quien te entiende

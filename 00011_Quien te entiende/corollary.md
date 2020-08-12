@@ -1,13 +1,13 @@
 ¡Así es! Puede haber más de un objeto que entienda el mismo mensaje. Notá que sin embargo no todos los objetos están obligados a reaccionar de igual forma ante el mismo mensaje:
 
 ```python
-Pepita.cantar()
+Pepita.cantar!
 => "pri pri pri"
 
-Norita.cantar()
+Norita.cantar!
 => "priiiip priiiip"
 
-Mercedes.cantar()
+Mercedes.cantar!
 => "♪ una voz antigua de viento y de sal ♫"
 ```
 
