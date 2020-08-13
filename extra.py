@@ -88,8 +88,7 @@ class pajaritoClass():
     #     self.energia
     if self.nombre=="Norita":
       raise ValueError("mensaje invalido: 'energia'")
-    else:
-      self._energia=ahora_vale
+    self._energia=ahora_vale
 
 
   @property
