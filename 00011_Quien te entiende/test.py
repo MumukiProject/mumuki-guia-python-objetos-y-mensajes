@@ -11,5 +11,8 @@
 #     expect(interfaz_norita).to match_array ['cantar!', 'comer_lombriz!', 'volar_en_circulos!']
 class Test(unittest.TestCase):
 
-  def test_description_example(self):
-    self.assertTrue(True)
+  def test_interfaz_de_Norita(self):
+    interfaz_pepita=set(["cantar()","comer_lombriz()","energia","volar_en_circulos()"])
+    interfaz_entregada=set(Norita)
+    
+    self.assertEqual(interfaz_pepita==interfaz_entregada)
