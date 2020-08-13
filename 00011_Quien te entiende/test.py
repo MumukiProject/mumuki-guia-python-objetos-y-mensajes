@@ -12,7 +12,7 @@
 class Test(unittest.TestCase):
 
   def test_interfaz_de_Norita(self):
-    interfaz_esperada=set(["cantar()","comer_lombriz()","energia","volar_en_circulos()"])
-    interfaz_entregada=set(interfaz_norita)
+    interfaz_esperada=["cantar()","comer_lombriz()","energia","volar_en_circulos()"]
+    interfaz_entregada=interfaz_norita
     
-    self.assertEqual(interfaz_esperada,interfaz_entregada,"la interfaz de Norita es algo como {iface}".format(iface=str(interfaz_esperada)))
+    self.assertEqual(set(interfaz_esperada),set(interfaz_entregada),"la interfaz de {nombre} es algo como {iface}".format(nombre="Mercedes", iface=str(interfaz_esperada)))
