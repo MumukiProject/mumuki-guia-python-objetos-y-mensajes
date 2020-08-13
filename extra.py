@@ -74,6 +74,8 @@ class pajaritoClass():
 
   @property
   def energia(self):
+    if self.nombre=="Norita":
+      raise ValueError("mensaje invalido: 'energia'")
     return self._energia
 
   @energia.setter
@@ -84,7 +86,10 @@ class pajaritoClass():
     #     self.energia = una_energia
     #   def self.energi(self):
     #     self.energia
-    self._energia=ahora_vale     #validacion?
+    if self.nombre=="Norita":
+      raise ValueError("mensaje invalido: 'energia'")
+    else:
+      self._energia=ahora_vale
 
 
   @property
