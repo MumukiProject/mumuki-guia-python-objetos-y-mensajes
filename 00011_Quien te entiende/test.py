@@ -15,4 +15,4 @@ class Test(unittest.TestCase):
     interfaz_esperada=set(["cantar()","comer_lombriz()","energia","volar_en_circulos()"])
     interfaz_entregada=set(interfaz_norita)
     
-    self.assertEqual(interfaz_esperada,interfaz_entregada,"la interfaz de Norita es algo como {if}".format(str(interfaz_esperada)))
+    self.assertEqual(interfaz_esperada,interfaz_entregada,"la interfaz de Norita es algo como {iface}".format(iface=str(interfaz_esperada)))
