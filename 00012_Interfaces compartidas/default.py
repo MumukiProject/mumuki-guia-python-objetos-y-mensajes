@@ -6,7 +6,7 @@ interfaz_compartida_entre_mercedes_y_norita = [
   "mensaje1",
   "mensaje2()",
   "mensaje3()",
-  ]
+  ]#la lista termina con este corchete
 
 # ¿Qué interfaz comparten Pepita y Norita?
 interfaz_compartida_entre_pepita_y_norita = [
