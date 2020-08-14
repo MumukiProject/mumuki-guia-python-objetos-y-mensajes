@@ -44,7 +44,7 @@ class Test(unittest.TestCase):
     interfaz_entregada=interfaz_mercedes
     ambos_tipos=any([not(str(x).endswith("()")) for x in interfaz_entregada])
     ambos_tipos&=any([str(x).endswith("()") for x in interfaz_entregada])
-    self.assertTrue(ambos_tipos,"la interfaz de {nombre} tiene mensajes que terminan en (), y otros que no. como {iface}".format(nombre="Mercedes", iface=interfaz_ejemplo))
+    self.assertTrue(ambos_tipos,"la interfaz de {nombre} tiene mensajes que terminan en (), y otros que no. Algo como {iface}".format(nombre="Mercedes", iface=interfaz_ejemplo))
     
 
     
