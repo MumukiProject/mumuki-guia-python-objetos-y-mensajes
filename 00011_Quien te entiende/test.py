@@ -44,7 +44,7 @@ class Test(unittest.TestCase):
     interfaz_entregada=interfaz_mercedes
     ambos_tipos=any([not(str(x).endswith("()")) for x in interfaz_entregada])
     ambos_tipos&=any([str(x).endswith("()") for x in interfaz_entregada])
-    self.assertTrue(todos_minusculas,"la interfaz de {nombre} tiene todas palabras en minúsculas (que pueden estar unidas por espacios subrayados), es algo como {iface}".format(nombre="Mercedes", iface=interfaz_ejemplo)))
+    self.assertTrue(todos_minusculas,"la interfaz de {nombre} tiene todas palabras en minúsculas (que pueden estar unidas por espacios subrayados), es algo como {iface}".format(nombre="Mercedes", iface=interfaz_ejemplo))
     
 
     
