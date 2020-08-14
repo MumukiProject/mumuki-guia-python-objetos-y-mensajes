@@ -9,7 +9,13 @@
 #
 #   it 'todas':
 #     expect(interfaz_compartida_entre_todas).to match_array ['cantar!']
+
+
 class Test(unittest.TestCase):
 
-  def test_description_example(self):
-    self.assertTrue(True)
+  def test_interfaz_compartida_entre_mercedes_y_norita(self):
+    interfaz_esperada=["cantar()","comer_lombriz()","volar_en_circulos()"]
+    interfaz_entregada=interfaz_norita
+    
+    self.assertEqual(set(interfaz_esperada),set(interfaz_entregada),"la interfaz de {nombre} es algo como {iface}".format(nombre="Norita", iface=interfaz_ejemplo))
+
