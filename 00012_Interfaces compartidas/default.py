@@ -16,4 +16,4 @@ interfaz_compartida_entre_pepita_y_norita = [
 # ¿Qué interfaz comparten Mercedes, Norita y Pepita?
 interfaz_compartida_entre_todas = [
   #...completar acá... 
-  ]
+]
