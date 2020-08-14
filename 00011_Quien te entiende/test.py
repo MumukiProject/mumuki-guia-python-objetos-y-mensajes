@@ -37,7 +37,7 @@ class Test(unittest.TestCase):
   def test_interfaz_de_Mercedes_con_palabras_en_minusculas(self):
     interfaz_entregada=interfaz_mercedes
     todos_minusculas=all([str(x).islower() for x in interfaz_entregada])
-    self.assertTrue(todos_minusculas,mayusminus+" La interfaz de {nombre} tiene todas palabras en minúsculas (que pueden estar unidas por espacios subrayados), es algo como {iface}".format(nombre="Mercedes", iface=interfaz_ejemplo)))
+    self.assertTrue(todos_minusculas,mayusminus+" La interfaz de {nombre} tiene todas palabras en minúsculas (que pueden estar unidas por espacios subrayados), es algo como {iface}".format(nombre="Mercedes", iface=interfaz_ejemplo))
 
 
   def test_interfaz_de_Mercedes_tiene_ambos_tipos_de_mensaje(self):
