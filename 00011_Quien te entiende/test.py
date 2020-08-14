@@ -29,18 +29,18 @@ class Test(unittest.TestCase):
 
   def test_interfaz_de_Mercedes_tiene_todos_los_mensajes_que_entiende(self):
     interfaz_esperada=["energia","cantar()","comer_lombriz()","volar_en_circulos()"]
-    interfaz_entregada=interfaz_Mercedes
+    interfaz_entregada=interfaz_mercedes
     
     self.assertEqual(set(interfaz_esperada),set(interfaz_entregada),"la interfaz de {nombre} es algo como {iface}".format(nombre="Mercedes", iface=str(interfaz_esperada[:2])))
 
   def test_interfaz_de_Mercedes_con_palabras_en_minusculas(self):
-    interfaz_entregada=interfaz_Mercedes
+    interfaz_entregada=interfaz_mercedes
     todos_minusculas=all([str(x).islower() for x in interfaz_entregada])
     self.assertTrue(todos_minusculas,mayusminus+" La interfaz de {nombre} tiene todas palabras en minúsculas (que pueden estar unidas por espacios subrayados), es algo como {iface}".format(nombre="Mercedes", iface=str(interfaz_esperada[:2])))
 
 
   def test_interfaz_de_Mercedes_tiene_ambos_tipos_de_mensaje(self):
-    interfaz_entregada=interfaz_Mercedes
+    interfaz_entregada=interfaz_mercedes
     ambos_tipos=any([not(str(x).endswith("()")) for x in interfaz_entregada])
     ambos_tipos&=any([str(x).endswith("()") for x in interfaz_entregada])
     self.assertTrue(todos_minusculas,"la interfaz de {nombre} tiene todas palabras en minúsculas (que pueden estar unidas por espacios subrayados), es algo como {iface}".format(nombre="Mercedes", iface=str(interfaz_esperada[:2])))
