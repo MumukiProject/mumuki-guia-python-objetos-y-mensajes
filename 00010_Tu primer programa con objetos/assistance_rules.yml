@@ -1,7 +1,6 @@
 ---
 rules:
-- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+- when:
     these_tests_failed:
     - Pepita quedó con energia correcta
   then: 'recordá que la  energía de Pepita depende 3 cosas: la inergía inicola, la
